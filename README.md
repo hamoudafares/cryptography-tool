@@ -24,4 +24,5 @@ In Windows there is some command which does not work, such as hashing with md5, 
  ## III. Improvements ##
 
 This software works fine, but there is still room for improvements: such as choosing where to save the encrypted message, saving hashed messages, choosing different encoding algorithms, fixing windows hash bugs (md5, tiger, whirlpool), give the user the possibility of choosing a dictionary that he has in his computer for cracking a password.
+
 ![Image of Tool](https://scontent.ftun15-1.fna.fbcdn.net/v/t1.15752-9/215984510_957281025051760_3789646575683484264_n.png?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeGiCIrILNys6KN1ioYyC8ToqRLmuCi2vZOpEua4KLa9k4o9UZdqLEHEscyVnPHtSfY&_nc_ohc=W80tFAO6LmwAX_zv4Rd&tn=Yr2BXvjdnd8ZVFCZ&_nc_ht=scontent.ftun15-1.fna&oh=5ee2685aa3e1b3da3cbc36bdf5202576&oe=60F35D8C)
