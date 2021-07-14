@@ -21,6 +21,6 @@ In Windows there is some command which does not work, such as hashing with md5, 
 
 5- asymmetric encryption: allows you to generate an existing key pair or choose an existing key, encrypt the message with this key and then save the encrypted message in a file named file.asym.txt.asc which is located in the same folder as final.sh
 
- ##III. Improvements ##
+ ## III. Improvements ##
 
 This software works fine, but there is still room for improvements: such as choosing where to save the encrypted message, saving hashed messages, choosing different encoding algorithms, fixing windows hash bugs (md5, tiger, whirlpool), give the user the possibility of choosing a dictionary that he has in his computer for cracking a password.
