@@ -2,10 +2,10 @@
 
 ## I. How it works ##
 To launch the software:
-- On Linux: Open a terminal and run the command ./final.sh
+- On Linux: Open a terminal and run the command ./script.sh
 - On Windows: Just double click on the file
 
-On both OS, the data dictionaries must be in the same folder as the final.sh file
+On both OS, the data dictionaries must be in the same folder as the script.sh file
 
 In Windows there is some command which does not work, such as hashing with md5, tiger and whirlpool algorithms, we need to install them separately
 
