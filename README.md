@@ -76,8 +76,7 @@ Give a [STAR](https://github.com/nour-karoui/secure-chat) if this project helped
 
 ## 📝 License
 
-* Copyright © 2021 [Nour](https://github.com/nour-karoui).
-* This project is [MIT](https://github.com/nour-karoui/secure-chat/blob/master/LICENSE) licensed.
+* Copyright © 2021 [Fares](https://github.com/hamoudafares).
 
 ***
 _This README was generated with by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
