@@ -77,6 +77,7 @@ Give a [STAR](https://github.com/nour-karoui/secure-chat) if this project helped
 ## 📝 License
 
 * Copyright © 2021 [Fares](https://github.com/hamoudafares).
+* License [MIT](https://github.com/hamoudafares/cryptography-tool/blob/main/LICENSE)
 
 ***
 _This README was generated with by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
