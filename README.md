@@ -1,83 +1,28 @@
-<h1 align="center">Welcome to Secure Chat 👋</h1>
-<p>
-  <a href="https://github.com/nour-karoui/secure-chat#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/nour-karoui/secure-chat/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/nour-karoui/secure-chat/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/bishkou/password-pwnd" />
-  </a>
-</p>
+# cryptography-tool
 
-#### An end to end encrypted messaging Real time messaging app built using React, Express, Socket.io, Mongodb, Node.Js, LDAP & OpenSSL
+## I. How it works ##
+To launch the software:
+- On Linux: Open a terminal and run the command ./script.sh
+- On Windows: Just double click on the file
+
+On both OS, the data dictionaries must be in the same folder as the script.sh file
+
+In Windows there is some command which does not work, such as hashing with md5, tiger and whirlpool algorithms, we need to install them separately
 
 
-### 🏠 [Homepage](https://github.com/nour-karoui/secure-chat)
+## II. Fonctionnalities ##
+1- encoding: it transforms a string into ASCII code, but does not save the encoded message in a file.
 
-![alt tag](https://user-images.githubusercontent.com/47257753/126567790-afcdae8b-27fc-4e9e-8b5b-efabcafb7067.png)
+2- decoding: it allows the message to be given from an ASCII code.
 
-***NB: This work is heavily based on [Timothylp's work](https://github.com/TimothyIp/rr_challenge). Shout out to the amazing frontend he prepared.***   
-<hr />
+3- cracking a password: choose a dictionary to crack a password.
 
-Features:
-  - User Account Creation/Login using LDAP
-  - Real-time chat using socket.io
-  - Tokens for API calls to backend
-  - Cookies for saved session on browser refresh
-  - Private Messaging with other users, all messages are end to end encrypted using asymmetric encryption <br/>
+4- symmetric encryption: allows to encrypt a message with a chosen algorithm (if nothing is chosen, the default algorithm is AES256) and to save the encrypted message in a file named file.sym.txt.asc which is in the same folder as final.sh
 
+5- asymmetric encryption: allows you to generate an existing key pair or choose an existing key, encrypt the message with this key and then save the encrypted message in a file named file.asym.txt.asc which is located in the same folder as final.sh
 
-## Installing
-```
-git clone https://github.com/nour-karoui/secure-chat .
-npm install
-npm start
-cd server 
-npm install
-npm start
-Go to http://localhost:3001/
-```
+ ## III. Improvements ##
 
-***PS***: Before Starting the app, make sure:
+This software works fine, but there is still room for improvements: such as choosing where to save the encrypted message, saving hashed messages, choosing different encoding algorithms, fixing windows hash bugs (md5, tiger, whirlpool), give the user the possibility of choosing a dictionary that he has in his computer for cracking a password.
 
- **1. you have apache directory studio installed and running.
-You can download it from [HERE](https://directory.apache.org/studio/downloads.html).
-After running the apache directory studio, make sure to link it to our project in the file *server/config/ldap-client*.**
- 
- **2. you generate a self signed certificate that'll allow you to verify the identity of the users and generate their certificates, *(our self signed cetificate is saved in server/openssl/CA)*.**
-
-
-## How Does it work
-
-1. When creating the account, the user generates a public and private key, and saves them in localstorage. the user sends the public key to the server alongside with his credentials.
-*NEVER SHARE THE PRIVATE KEY WITH ANYONE*.
-2. The server receives the user's credentials and his public key, he generates a certificate out of the public key and saves the user in the LDAP server.
-3. Each time userA wants to chat with userB, the server sends userB's certificate to userA and vice versa.
-Each user saves the other's certificate in their localstorage to be able to encrypt messages and send them.
-4. The *ENCRYPTED* messages are saved in Monge DB.
-
-
-## Author
-
-👤 **Fares**
-
-* Github: [@hamoudaferes](https://github.com/hamoudafares)
-* LinkedIn: [@Hamouda Fares](https://www.linkedin.com/in/hamouda-fares/)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/hamoudafares/cryptography-tool/issues)
-
-## Show your support
-
-Give a [STAR](https://github.com/nour-karoui/secure-chat) if this project helped you!
-
-## 📝 License
-
-* Copyright © 2021 [Fares](https://github.com/hamoudafares).
-* License [MIT](https://github.com/hamoudafares/cryptography-tool/blob/main/LICENSE)
-
-***
-_This README was generated with by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+![Image of Tool](https://scontent.ftun15-1.fna.fbcdn.net/v/t1.15752-9/215984510_957281025051760_3789646575683484264_n.png?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeGiCIrILNys6KN1ioYyC8ToqRLmuCi2vZOpEua4KLa9k4o9UZdqLEHEscyVnPHtSfY&_nc_ohc=W80tFAO6LmwAX_zv4Rd&tn=Yr2BXvjdnd8ZVFCZ&_nc_ht=scontent.ftun15-1.fna&oh=5ee2685aa3e1b3da3cbc36bdf5202576&oe=60F35D8C)
